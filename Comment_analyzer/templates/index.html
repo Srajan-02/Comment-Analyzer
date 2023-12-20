@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Comments Analysis</title>
+  </head>
+  <body>
+    <h1>YouTube Comments Analysis</h1>
+    <form method="post" action="/">
+      <label for="video_link">Enter YouTube Video Link:</label>
+      <input type="text" id="video_link" name="video_link" required />
+      <button type="submit">Analyze</button>
+    </form>
+
+    <div class="results">
+      {% if result %}
+      <h2>Analysis Result:</h2>
+      <p>{{ result }}</p>
+      {% endif %}
+    </div>
+      <p1 class="footer-description">Made with ❤️ by Srajan.</p>
+    </div>
+  </body>
+</html>
