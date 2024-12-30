@@ -194,7 +194,6 @@ The tool provides:
 
 ## UI Screenshots
 
-[Note: Please add your UI screenshots here. You can use the following format:]
 
 ![1](https://github.com/user-attachments/assets/f34c264d-5659-458a-8391-118932a14d04)
 
