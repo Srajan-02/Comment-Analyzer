@@ -14,7 +14,7 @@ from urllib.parse import urlparse, parse_qs
 
 api_service_name = "youtube"
 api_version = "v3"
-DEVELOPER_KEY = "AIzaSyC1YUwsMt-dRKwU1WRJ9YUZZewj7eNjVZQ"
+DEVELOPER_KEY = "YOUR_API_KEY"
 youtube = googleapiclient.discovery.build(
     api_service_name, api_version, developerKey=DEVELOPER_KEY)
 
