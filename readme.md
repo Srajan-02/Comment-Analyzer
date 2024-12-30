@@ -196,11 +196,12 @@ The tool provides:
 
 [Note: Please add your UI screenshots here. You can use the following format:]
 
-![UI Screenshot 1](path/to/screenshot1.png)
-*Caption: Main interface for entering YouTube URL*
+![1](https://github.com/user-attachments/assets/f34c264d-5659-458a-8391-118932a14d04)
 
-![UI Screenshot 2](path/to/screenshot2.png)
-*Caption: Sentiment analysis results visualization*
+
+![2](https://github.com/user-attachments/assets/b23b8508-7feb-4be2-a697-e887e98ceac7)
+
+
 
 ## Future Improvements
 
