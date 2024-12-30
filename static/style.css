@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("Images/back.png");
+    background-size: cover;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #272727;
+}
+
+.text{
+    font-size: 20px;
+    color: thistle;
+    margin-bottom: 850px;
+    margin-right: 600px;
+}
+
+.text span:nth-child(odd) {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.text:hover span:nth-child(odd) {
+    transform: translate(0, -0.5em);
+}
+
+.text span:nth-child(even) {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.text:hover span:nth-child(even) {
+    transform: translate(0, 0.5em);
+}
+
+
+h1 {
+    color: #fff; 
+    text-align: center;
+    margin-bottom: 120px; 
+    
+}
+
+form {
+    /* display: flex; */
+    text-align: center;
+}
+
+label {
+    /* display: flex; */
+    margin-left: 400px;
+}
+
+input {
+    padding: 8px;
+    width: 300px;
+    margin-bottom: 500px;
+    margin-left: 400px;
+}
+
+button {
+    width: 220px;
+    height: 80px;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #ff0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 80px;
+    /* vertical space b/w baseline of one line of text and baseline of the next line of text within the same element. */
+
+    position: relative;
+    transition: all 0.5s;
+}
+
+button::before, button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #ff0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    z-index: -1;
+    opacity: 0;
+}
+
+button::before {
+    left: 0;
+    box-shadow: -100px 0 0 #ff0;
+}
+
+button::after {
+    right: 0;
+    box-shadow: 100px 0 0 #ff0;
+}
+
+button:hover::before {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 30px 0 0 #ff0;
+    opacity: 1;
+}
+/* This CSS block styles the a:before pseudo-element when the anchor is hovered over.
+left: 50% positions the pseudo-element at the center horizontally.
+transform: translateX(-50%) translateY(-50%) centers the pseudo-element vertically.
+box-shadow: 30px 0 0 #ff0 moves the yellow bar to the center (30px horizontally) on hover.
+opacity: 1 sets the opacity to 1, making the pseudo-element fully visible on hover. */
+
+button:hover::after {
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    box-shadow: -30px 0 0 #ff0;
+    opacity: 1;
+}
+
+button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff0;
+    border-radius: 8px;
+    transform: scale(0);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+button:hover span {
+    transform: scale(1);
+    transition-delay: 0.4s;
+}
+/* This CSS block styles the inner <span> element when the anchor is hovered over.
+transform: scale(1) scales up the span to full size, making it visible.
+transition-delay: 0.4s adds a delay of 0.4 seconds to the transition, creating a timing effect where the span appears after a slight delay when the anchor is hovered. */
+
+button:hover {
+    color: #262626;
+    transition-delay: 0.4s;
+}
+
+
+
+
+h2 {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 30px;
+    padding: 30px 0 0;
+    flex: 1 0 auto;
+
+}
+p1{
+    color: white;
+    padding: 30px 0 0;
+    flex: 1 0 auto;
+    
+}
+
+
+.footer-description {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+results{
+    padding: 30px 0 0;
+    flex: 1 0 auto;
+    color: white;
+    
+}
