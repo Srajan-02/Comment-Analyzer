@@ -15,3 +15,6 @@ torch==2.2.2
 transformers==4.38.2
 vaderSentiment==3.3.2
 vaderSentiment==3.3.2
+setuptools>=65.5.1
+distlib==0.3.7
+distutils
