@@ -6,6 +6,7 @@
       "use": "@vercel/python",
       "config": {
         "runtime": "python3.10",
+        "buildCommand": "pip install -v -r requirements.txt"
       }
     }
   ],
