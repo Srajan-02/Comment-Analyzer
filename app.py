@@ -90,8 +90,7 @@ def index():
             graph_url = url_for('static', filename=f'Graph_chart/{os.path.basename(graph_path)}')
 
     return render_template('index.html', result=result, line_chart_url=line_chart_url, graph_url=graph_url)
-if __name__ == '__main__':
-    app.run(debug=True)
+
 
 
 
