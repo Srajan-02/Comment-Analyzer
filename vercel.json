@@ -6,7 +6,6 @@
       "use": "@vercel/python",
       "config": {
         "runtime": "python3.10",
-        "buildCommand": "pip install --use-deprecated=legacy-resolver -r requirements.txt"
       }
     }
   ],
