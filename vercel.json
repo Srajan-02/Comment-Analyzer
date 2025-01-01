@@ -5,15 +5,15 @@
       "src": "./index.py",
       "use": "@vercel/python",
       "config": {
-        "runtime": "python3.10",
-        "buildCommand": "pip install -v -r requirements.txt"
+        "runtime": "python3.12",
+        "buildCommand": "pip install -r requirements.txt && pip install setuptools>=65.5.1 distlib==0.3.7 distutils"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/index.py"
     }
   ]
 }
